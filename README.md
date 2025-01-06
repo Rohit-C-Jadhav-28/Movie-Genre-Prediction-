@@ -1,4 +1,4 @@
-# Movie Genre Prediction Based on Description
+# Movie Genre Prediction
 
 ## Overview
 This project aims to classify movies into their respective genres based solely on their descriptions. Leveraging Natural Language Processing (NLP) techniques and machine learning models, this tool can predict genres like Action, Comedy, Drama, and more based on textual data.
@@ -14,14 +14,13 @@ This project aims to classify movies into their respective genres based solely o
 - **Libraries and Frameworks**:
   - Pandas, NumPy: Data manipulation and analysis
   - Scikit-learn: Traditional machine learning models
-  - TensorFlow/PyTorch: Deep learning models (optional)
   - NLTK/Spacy: Text preprocessing and tokenization
-  - Matplotlib, Seaborn: Data visualization
 
 ## Dataset
 The project uses a dataset containing:
 - Movie descriptions (text)
-- Corresponding genres (labels)
+
+      https://www.kaggle.com/datasets/hijest/genre-classification-dataset-imdb/data
 
 You can use publicly available datasets such as the [IMDb Dataset](https://www.imdb.com/interfaces/) or create your own dataset.
 
@@ -30,12 +29,12 @@ Follow these steps to set up the project locally:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/movie-genre-prediction.git
+   git clone https://github.com/your-username/Movie-Genre-Prediction-.git
    ```
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd movie-genre-prediction
+   cd Movie-Genre-Prediction-
    ```
 
 3. **Create a Virtual Environment**:
@@ -54,30 +53,24 @@ Follow these steps to set up the project locally:
 
 2. **Run the Preprocessing Script**:
    ```bash
-   python preprocess.py
+   python Prediction.py
    ```
 
 3. **Train the Model**:
    ```bash
-   python train.py
+   python Model_Creation.py
    ```
 
 4. **Make Predictions**:
    Use the trained model to predict genres for new descriptions:
-   ```bash
-   python predict.py --description "A story of a young wizard who battles evil forces."
-   ```
 
 ## Folder Structure
 ```
-movie-genre-prediction/
+Movie-Genre-Prediction-/
 |-- data/              # Dataset files
 |-- models/            # Saved models
-|-- notebooks/         # Jupyter notebooks for exploration
-|-- src/               # Source code files
-|   |-- preprocess.py  # Text preprocessing script
-|   |-- train.py       # Model training script
-|   |-- predict.py     # Prediction script
+|-- Model_Creation.py  # Model training script
+|-- Prediction.py      # Prediction script
 |-- requirements.txt   # Project dependencies
 |-- README.md          # Project documentation
 ```
@@ -99,18 +92,14 @@ Contributions are welcome! If you'd like to contribute:
    ```
 5. Submit a pull request.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
-- Datasets: IMDb, TMDB, or other public movie datasets.
+- Datasets: https://www.kaggle.com/datasets/hijest/genre-classification-dataset-imdb/data .
 - Tutorials and community contributions that inspired this project.
 
 ## Contact
 If you have any questions or suggestions, feel free to reach out:
-- **Email**: your-email@example.com
-- **GitHub**: [your-username](https://github.com/your-username)
-
+- **Email**: rcjadhav005@gmail.com.com
+- **GitHub**: [Rohit Chandrakant Jadhav]((https://github.com/Rohit-C-Jadhav-28))
 ---
 
 Happy coding and enjoy exploring the world of movie genres! 🎬
