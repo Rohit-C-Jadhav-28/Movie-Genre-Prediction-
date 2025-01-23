@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie-Genre-Prediction</title>
+    <style>
+        body{
+            background-color: black;
+            color: whitesmoke;
+            top: 0;
+        }
+        .Hero-Form{
+            padding-top : 10px;
+            padding-bottom: 10px;
+
+        }
+        .btn-sub{
+            font-size: 18px;
+            padding: 10px 30px;
+            margin-top: 20px;
+            background-color: rgb(210, 20, 20);
+            border: none;
+            border-radius: 10px;
+            color: aliceblue;
+        }
+        .btn-sub:hover{
+            background-color:rgb(210, 20, 20);
+            font-size: 19px;
+        }
+        .Text-area{
+            height: 150px;
+            width: 400px;
+            border: none;
+            background-color: rgb(220, 216, 216);
+            color: rgb(53, 52, 52);
+        }
+    </style>
+</head>
+<body>
+    <center><h1 >Movie Genre Prediction</h1></center>
+
+    <center>
+        <div>
+            <form class='Hero-Form' action="/pred" method="post">
+                <input type="text" form="text-area" name="Input-Description" required style="display: none;">
+                <textarea class="Text-area" name="text-area" placeholder="Enter Description..." ></textarea>
+                <br>
+                <input class='btn-sub' type="submit" value="Submit">
+            </form>
+            {%if Prediction_Result%}
+            <p style="color: white;"><b>Prediction Result</b> : {{Prediction_Result}}</p>
+            {%endif%}
+        </div>
+    </center>
+
+</body>
+</html>
